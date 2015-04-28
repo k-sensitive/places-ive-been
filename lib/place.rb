@@ -1,4 +1,4 @@
-class Places
+class Place
 
   @@places = []
 
@@ -10,11 +10,16 @@ class Places
     @place
   end
 
-  define_method(:store) do
-    @@places.push(self)  
+  define_method(:save) do
+    @@places.push(self)
   end
 
   define_singleton_method(:all) do
     @@places
   end
+
+  define_singleton_method(:clear) do
+    @@places = []
+  end
+
 end
