@@ -14,3 +14,8 @@ post('/place') do
   location.save()
   erb(:success)
 end
+
+post('/clear') do
+  Place.clear()
+  erb(:clear)
+end
