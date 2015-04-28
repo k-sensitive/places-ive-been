@@ -1,0 +1,16 @@
+<h1>Places I've Been:</h1>
+
+<ul>
+  <% @place.each() do |place| %>
+  <li><%= place.display() %></li>
+  <% end %>
+</ul>
+
+<p>Add a new place</p>
+
+<form action='/place' method="post">
+  <label for="place">Enter the Place:</label>
+  <input id="place" name="place" type="text">
+
+  <button type="submit">Add Place</button>
+</form>
