@@ -1,4 +1,4 @@
-# Places I've Been
+# Places You've Been
 By: Kim Dang
 
 This is an app to track the places you've been.
